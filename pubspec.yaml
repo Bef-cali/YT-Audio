@@ -1,0 +1,39 @@
+name: yt_audio
+description: A Flutter app to download and listen to YouTube audio offline
+version: 0.1.0
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"  # More flexible SDK constraint
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core functionality
+  youtube_explode_dart: ^2.0.0  # Allow latest major version
+  just_audio: ^0.9.35  # Audio playback
+  audio_service: ^0.18.10  # Background audio
+  
+  # Data management
+  path_provider: ^2.1.1
+  sqflite: ^2.3.0
+  provider: ^6.0.5
+  
+  # UI components
+  cupertino_icons: ^1.0.5
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#FFFFFF" # For Android adaptive icons
+  adaptive_icon_foreground: "assets/icon/icon.png"
